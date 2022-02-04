@@ -16,19 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I8o-4U-ctp">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8o-4U-ctp">
                                 <rect key="frame" x="20" y="44" width="374" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcy-cj-Sx4">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcy-cj-Sx4">
                                 <rect key="frame" x="20" y="462" width="374" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tcy-cj-Sx4" firstAttribute="top" secondItem="I8o-4U-ctp" secondAttribute="bottom" constant="18" id="2B4-KX-giI"/>
+                            <constraint firstItem="tcy-cj-Sx4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4y4-hr-l9p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I8o-4U-ctp" secondAttribute="trailing" constant="20" id="CIa-jn-wQo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tcy-cj-Sx4" secondAttribute="trailing" constant="20" id="OF6-vJ-1sd"/>
+                            <constraint firstItem="tcy-cj-Sx4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QU9-nJ-STO"/>
+                            <constraint firstItem="I8o-4U-ctp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bH2-Hu-uM6"/>
+                            <constraint firstItem="I8o-4U-ctp" firstAttribute="height" secondItem="tcy-cj-Sx4" secondAttribute="height" id="nWZ-4e-SEb"/>
+                            <constraint firstItem="I8o-4U-ctp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rzH-Y8-lhj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
